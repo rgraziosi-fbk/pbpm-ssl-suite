@@ -1,10 +1,19 @@
-# Introduction 
+# Introduction
+
 ## Setup
 1. Clone this repository
 2. Navigate inside the cloned folder
 3. Create the conda environment by running `conda env create -f env.yaml`
 4. Validate the installation by activating the environment (`conda activate pbpm-experiment`)
 
+## Setup (for M1 Macs!)
+
+Python 3.7 may not be available in conda for M1 Macs. If so, follow these steps:
+
+1. Create an empty environment: `conda create -n pbpm-experiment`
+2. Activate the newly created environment
+3. Run: `conda config --env --set subdir osx-64`
+4. Run: `conda env update --file env.yaml`
 
 ## Change environment
 `conda env update --name pbpm-experiment --file env.yaml --prune`
