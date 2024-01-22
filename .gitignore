@@ -1,5 +1,7 @@
 # Project exclude paths
 /data/
 
+**.DS_Store
 **.pyc
 **.xes
+**.csv
